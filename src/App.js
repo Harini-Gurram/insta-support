@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { useEffect } from 'react';
 import './App.css';
 
+
 function App() {
+  
+  const handleClick=(event)=>{
+    
+    window.location.href='https://api.instagram.com/oauth/authorize?client_id=1379077412944454&redirect_uri=https://insta-basic.vercel.app/&scope=user_profile,user_media&response_type=code'
+    
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='login-container'>
+        <p className="p3">Follow these steps to fetch feed from instagram using Basic display APIs</p>
+        <div className='button-container'>
+          <button className="button" onClick={handleClick}>Get started</button>
+        </div>
+      </div>
     </div>
   );
 }
