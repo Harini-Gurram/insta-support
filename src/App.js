@@ -13,7 +13,7 @@ const imageAnimation = keyframes`
 const AnimatedImage = styled.img`
   position: absolute;
   top:51.8%;
-  left:38.5%;
+  left:38.7%;
   transform: translate(-50%, -50%);
   opacity:0;
   width:36vh;
